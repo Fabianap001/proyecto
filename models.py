@@ -15,6 +15,7 @@ datos_personas = datos['Personas']
 #Así que nos basta con indicar el index y el nombre de CLAVE PARA IMPRIMIR UN VALOR
 #print(datos_personas[0]['test'])
 #BLOQUE CLASE PERSONA Y CRUD
+
 class Persona(object):
     contador_id = 0 #Creamos una variable contador
     def __init__(self, nombre, apellido, apodo, telefono, direccion):

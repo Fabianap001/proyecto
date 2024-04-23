@@ -1,3 +1,4 @@
+#Esto es el servidor 
 from flask import Flask, request, render_template #Importamos clase Flask, objeto request de flask (librería)
 app = Flask(__name__) #Creamos una app instanciando la clase Flask (automáticamente el nombre de la app)
 #Rutas - (argumentos: Url) - Función

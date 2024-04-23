@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
     <title>Mi primer App en Flask</title> <!--Modificamos el Título-->
 </head>
 <body><!--Aquí comienza el cuerpo de nuestro HTML-->
     <h1 style = "text-align:center">Directorio Telefónico - Mi primer aplicación en Flask</h1> <!--Titulo principal centrado-->
+    <img src="{{url_for('static', filename='logo1.png')}}" alt="logo1">
     <br>
     <div>    <!--Creamos un div contenedor-->
         <div style="width: 60%; float:left; text-align:center;">    <!--Creamos el div de la izquierda-->
