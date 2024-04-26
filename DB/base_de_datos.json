@@ -1,18 +1,121 @@
 {
     "Personas": [
-            {
-              "test":1
-            },
-            {
-              "test":2
-            },
-            {
-              "id":1,
-              "nombre": "Mariano",
-              "apellido": "Laca",
-              "apodo": "pyromaniac",
-              "telefono": "2632255",
-              "direccion": "pythones.net"
-            }
-      ]
+        {
+            "id": 1,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "pyromaniac",
+            "telefono": "2632255",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 2,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "pyromaniac",
+            "telefono": "2632255",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 3,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "Pyromaniac",
+            "telefono": "34343434",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 4,
+            "nombre": "Martin",
+            "apellido": "Paredes",
+            "apodo": "el loco",
+            "telefono": 343455555,
+            "direccion": "los buitres 123"
+        },
+        {
+            "id": 5,
+            "nombre": "Marcos",
+            "apellido": "Talo",
+            "apodo": "El pepo",
+            "telefono": 343455555,
+            "direccion": "sin nombre 123"
+        },
+        {
+            "id": 6,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "Pyromaniac",
+            "telefono": "34343434",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 7,
+            "nombre": "Martin",
+            "apellido": "Paredes",
+            "apodo": "el loco",
+            "telefono": 343455555,
+            "direccion": "los buitres 123"
+        },
+        {
+            "id": 8,
+            "nombre": "Marcos",
+            "apellido": "Talo",
+            "apodo": "El pepo",
+            "telefono": 343455555,
+            "direccion": "sin nombre 123"
+        },
+        {
+            "id": 9,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "Pyromaniac",
+            "telefono": "34343434",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 10,
+            "nombre": "Martin",
+            "apellido": "Paredes",
+            "apodo": "el loco",
+            "telefono": 343455555,
+            "direccion": "los buitres 123"
+        },
+        {
+            "id": 11,
+            "nombre": "Marcos",
+            "apellido": "Talo",
+            "apodo": "El pepo",
+            "telefono": 343455555,
+            "direccion": "sin nombre 123"
+        },
+        {
+            "id": 12,
+            "nombre": "Mariano",
+            "apellido": "Laca",
+            "apodo": "Pyromaniac",
+            "telefono": "34343434",
+            "direccion": "pythones.net"
+        },
+        {
+            "id": 13,
+            "nombre": "Martin",
+            "apellido": "Paredes",
+            "apodo": "el loco",
+            "telefono": 343455555,
+            "direccion": "los buitres 123"
+        },
+        {
+            "id": 14,
+            "nombre": "Marcos",
+            "apellido": "Talo",
+            "apodo": "El pepo",
+            "telefono": 343455555,
+            "direccion": "sin nombre 123"
+        }
+    ],
+    "Configuraciones": [
+        {
+            "contador_id_db": 14
+        }
+    ]
 }

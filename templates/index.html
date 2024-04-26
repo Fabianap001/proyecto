@@ -7,44 +7,76 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
     <title>Mi primer App en Flask</title> <!--Modificamos el Título-->
 </head>
-<body><!--Aquí comienza el cuerpo de nuestro HTML-->
-    <h1 style = "text-align:center">Directorio Telefónico - Mi primer aplicación en Flask</h1> <!--Titulo principal centrado-->
-    <img src="{{url_for('static', filename='logo1.png')}}" alt="logo1">
-    <br>
-    <div>    <!--Creamos un div contenedor-->
-        <div style="width: 60%; float:left; text-align:center;">    <!--Creamos el div de la izquierda-->
-            <h2>Datos completos de la persona</h2>  <!--Titulo-->
-            <table border = "1" style = "width: 100%;"> <!--Creamos la tabla con borde-->
-                <tr><!--Creamos una fila-->
-                    <td>Nombre</td> <!--Dentro de la fila las columnas-->
+<body>
+
+    <header>
+        <img src="{{url_for('static', filename='logo1.png')}}" alt="logo1" class="logo1">
+        <h1>Directorio Telefónico - Mi primer aplicación en Flask</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- <main>
+        <section>
+            <h2>Destinos Populares</h2>
+            <div class="destino">
+                <img src="destino1.jpg" alt="Destino 1">
+                <h3>Destino 1</h3>
+                <p>Descripción del destino 1.</p>
+                <a href="#">Comprar boleto</a>
+            </div>
+            <div class="destino">
+               <img src="destino2.jpg" alt="Destino 2"> 
+                <h3>Destino 2</h3>
+                <p>Descripción del destino 2.</p>
+                <a href="#">Comprar boleto</a>
+            </div>
+            Más destinos aquí
+        </section>
+    </main> -->
+    <div>    
+        <div style="width: 60%; float:left; text-align:center;">    
+            <h2>Datos completos de la persona</h2>  
+            <table border = "1" style = "width: 100%;">
+                <tr>
+                    <td>Nombre</td> 
                     <td>Apellido</td>
                     <td>Apodo</td>
                     <td>Teléfono</td>
                     <td>Dirección</td>
                 </tr>
-                <tr><!--creamos otra fila-->
-                    <td></td> <!--Aquí se cargarán los datos correspondientes-->
+                <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-            </table>    <!--Fin de la tabla-->
-        </div>  <!--Cierre del div de la izquierda-->
-        <div style="width: 20%; float:right; margin-right: 10%; text-align:center;"> <!--Div de la derecha-->
-            <h2>Personas</h2> <!--Titulo-->
-            <table border = "1" style = "width: 100%;"><!--Tabla de la derecha-->
-                <tr><!--Fila-->
-                    <td></td><!--Columna que mostrará el nombre y apellido-->
-                    <td><button name = "ver">Ver</button></td><!--Columna que mostrará el botón Ver-->
-                    <td><button name = "editar">Editar</button></td><!--Columna que mostrará el botón Editar-->
-                    <td><button name = "eliminar">Eliminar</button></td><!--Columna que mostrará el botón Eliminar-->
+            </table>   
+        </div>  
+        <div style="width: 20%; float:right; margin-right: 10%; text-align:center;"> 
+            <h2>Personas</h2> 
+            <table border = "1" style = "width: 100%;">
+                <tr>
+                    <td></td>
+                    <td><button name = "ver">Ver</button></td>
+                    <td><button name = "editar">Editar</button></td>
+                    <td><button name = "eliminar">Eliminar</button></td>
                 </tr>
                 <tr>
-                    <td><button name = "agregar">Agregar</button></td><!--Columna que mostrará el botón Agregar-->
+                    <td><button name = "agregar">Agregar</button></td>
                 </tr>
             </table>
         </div>
     </div>
+    
+    <!-- <footer>
+        <p>&copy; 2024 Venta de Boletos de Avión</p>
+    </footer> -->
 </body>
 </html>

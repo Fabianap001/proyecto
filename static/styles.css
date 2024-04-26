@@ -1,16 +1,76 @@
 /*styles.css*/
 body {
-    background-color: darkcyan;
+    background-color: #9EF8EE;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, nav, main, footer {
+    padding: 20px;
 }
 
-div style 
-{   
-    color: blueviolet;
+header {
+    background-color: #22BABB;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo1 {
+    max-width: 100px; /* Tamaño máximo de la imagen del logo */
 }
 
-p
-{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+/* Estilos para la sección de destinos */
+.destino {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.destino img {
+    max-width: 100%;
+    height: auto;
+}
+
+.destino h3 {
+    margin-top: 10px;
+}
+
+.destino p {
+    margin-top: 5px;
+}
+
+.destino a {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.destino a:hover {
+    background-color: #666;
 }
