@@ -1,82 +1,167 @@
 <!DOCTYPE html>
-<html lang="es"> <!--Cambiamos a español-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
-    <title>Mi primer App en Flask</title> <!--Modificamos el Título-->
+    <script src="script.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="static\styles.css">
 </head>
+
 <body>
 
-    <header>
-        <img src="{{url_for('static', filename='logo1.png')}}" alt="logo1" class="logo1">
-        <h1>Directorio Telefónico - Mi primer aplicación en Flask</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <!-- <main>
-        <section>
-            <h2>Destinos Populares</h2>
-            <div class="destino">
-                <img src="destino1.jpg" alt="Destino 1">
-                <h3>Destino 1</h3>
-                <p>Descripción del destino 1.</p>
-                <a href="#">Comprar boleto</a>
-            </div>
-            <div class="destino">
-               <img src="destino2.jpg" alt="Destino 2"> 
-                <h3>Destino 2</h3>
-                <p>Descripción del destino 2.</p>
-                <a href="#">Comprar boleto</a>
-            </div>
-            Más destinos aquí
-        </section>
-    </main> -->
-    <div>    
-        <div style="width: 60%; float:left; text-align:center;">    
-            <h2>Datos completos de la persona</h2>  
-            <table border = "1" style = "width: 100%;">
-                <tr>
-                    <td>Nombre</td> 
-                    <td>Apellido</td>
-                    <td>Apodo</td>
-                    <td>Teléfono</td>
-                    <td>Dirección</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>   
-        </div>  
-        <div style="width: 20%; float:right; margin-right: 10%; text-align:center;"> 
-            <h2>Personas</h2> 
-            <table border = "1" style = "width: 100%;">
-                <tr>
-                    <td></td>
-                    <td><button name = "ver">Ver</button></td>
-                    <td><button name = "editar">Editar</button></td>
-                    <td><button name = "eliminar">Eliminar</button></td>
-                </tr>
-                <tr>
-                    <td><button name = "agregar">Agregar</button></td>
-                </tr>
-            </table>
+     <header class="header">
+        <div class="menu container">
+         <a href="#" class="logo">Avianka</a>
+         <input type="checkbox" id="menu">
+         <label for="menu"><img src="{{url_for('static', filename='menu.png')}}" class="menu-icono" alt="menu"></label>
+         <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Reservaciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+         </nav>
+         <div>
+            <ul>
+                <li class="submenu">
+                    <img src="{{url_for('static', filename='car.svg')}}" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                    </div>
+                </li>
+            </ul>
+         </div>
         </div>
+        <div class="header-content container">
+            <h1>Vuelos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus molestias doloremque magni, atque est error vero sunt dolore ipsam, laborum ad asperiores ex ipsum unde minima iste quam fuga!</p>
+            <div class="botons">
+                <a href="#" class="btn-1">Mas Informacion</a>
+                <a href="#" class="btn-1">Menu</a>
+            </div>
+            <div class="socials-1">
+                <img src="{{url_for('static', filename='s1.svg')}}" alt=""> 
+                <img src="{{url_for('static', filename='s2.svg')}}" alt="">    
+                <img src="{{url_for('static', filename='s3.svg')}}" alt="">       
+            </div>
+            <a href="#lista">
+                <img src="{{url_for('static', filename='arrow.svg')}}" alt="">    
+            </a>
+        </div>
+     </header>
+    <div class="Vuelos">
+        <h3>Tipos de vuelos</h3>
+        <hr>
+        <p>Vuelos</p>
     </div>
+   <section class="Tipos-Vuelos" id="lista">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <h3 class="c1">Vuelos nacionales</h3>
+         <p class="Precio">$200</p>
+         <img src="{{url_for('static', filename='🇧🇷.jpeg')}}" alt="">
+         <p class="c2">Operan dentro de un país específico, sin cruzar fronteras internacionales.</p>
+         <a href="#" class="agregar-carrito btn-2" data-id="1">Agragar al carrito</a>
+       </div>
+       <div class="swiper-slide">
+        <h3 class="c1">Vuelos internacionales</h3>
+        <p class="Precio">$200</p>
+        <img src="{{url_for('static', filename='br2.jpeg')}}" alt="">
+        <p class="c2">Se realizan entre dos o más países diferentes, cruzando fronteras internacionales.</p>
+        <a href="#" class="agregar-carrito btn-2" data-id="2">Agragar al carrito</a>
+      </div>
+      <div class="swiper-slide">
+        <h3 class="c1">Vuelos regionales</h3>
+        <p class="Precio">$200</p>
+        <img src="{{url_for('static', filename='br3.jpeg')}}" alt="">
+        <p class="c2">Conectan ciudades dentro de una región geográfica específica, como vuelos dentro de América Latina.</p>
+        <a href="#" class="agregar-carrito btn-2" data-id="3">Agragar al carrito</a>
+      </div>
+      <div class="swiper-slide">
+        <h3 class="c1">Vuelos de larga distancia</h3>
+        <p class="Precio">$200</p>
+        <img src="{{url_for('static', filename='br4.jpeg')}}" alt="">
+        <p class="c2">Cubren distancias considerables, como vuelos intercontinentales que cruzan océanos.</p>
+        <a href="#" class="agregar-carrito btn-2" data-id="4">Agragar al carrito</a>
+      </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination "></div>
+    </div>
+   </section>
+   <section class="Vuelos container">
+   <div class="Vuelos container">
+    <hr>
+    <p>Contacto</p>
+    </div>
+   </section>
+
+<footer class="footer container">
+    <div class="links">
+        <h3>Redes</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis non officia illum aliquam labore, fugit eveniet eius perspiciatis a maiores enim iure. Tempore harum deleniti optio cumque alias molestiae voluptatum!
+        </p>
+        
     
-    <!-- <footer>
-        <p>&copy; 2024 Venta de Boletos de Avión</p>
-    </footer> -->
+      <div class="link">
+           <h3>Lorem</h3>
+           <url>
+            <li><a href="#"></a>lorem</li>
+            <li><a href="#"></a>lorem</li>
+            <li><a href="#"></a>lorem</li>
+            <li><a href="#"></a>lorem</li>
+            <li><a href="#"></a>lorem</li>
+           </url>
+      </div>
+
+      <div class="link">
+        <h3>Lorem</h3>
+        <url>
+         <li><a href="#"></a>lorem</li>
+         <li><a href="#"></a>lorem</li>
+         <li><a href="#"></a>lorem</li>
+         <li><a href="#"></a>lorem</li>
+         <li><a href="#"></a>lorem</li>
+        </url>
+   </div>
+   <div class="link">
+    <h3>Lorem</h3>
+    <form>
+        <input type="text" placeholder="Nombre" class="inp">
+        <input type="email" placeholder="email" class="inp">
+        <textarea class="inp"></textarea>
+        <input class="btn-4" type="submit" value="Enviar">
+    </form>
+    </div>
+    </div>
+
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
