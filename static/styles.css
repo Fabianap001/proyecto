@@ -346,7 +346,7 @@ color: #e45d34;
   color: #dfdde0;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
   .menu{
     padding: 30px;
   }
