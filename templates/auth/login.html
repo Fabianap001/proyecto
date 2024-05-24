@@ -10,15 +10,30 @@
 {% block body %}
 <form class="form-signin" action="/login" method="POST">
     <img src="{{ url_for('static' , filename='avianka.jpg') }}" alt="Logo" width="72" height="72">
+    {% with messages = get_flashed_messages()%}
 
+    {% if messages %}
+
+    </br>
+    {% for message in messages %}
+
+    <div class="alert alert-primary alert-dismissible" role="alert">
+       <strong>{{ message }} </strong>
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div> 
+    {% endfor %}
+    {% endif %}
+
+    {% endwith %}
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     
-    <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputUsername" class="visually-hidden">username</label>
+    <input type="text" name="inputUsername" id="inputUsername" class="form-control" placeholder="Digite Usuario" required autofocus>
     
     <label for="inputPassword" class="visually-hidden">Password</label>
     <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
     
+
     <div class="checkbox mb-3">
         <label>
             <input type="checkbox" value="remember-me"> Remember me
